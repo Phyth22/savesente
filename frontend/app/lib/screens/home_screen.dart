@@ -58,7 +58,7 @@
 //                 ],
 //               ),
 //             ),
-            
+
 //             // Main content
 //             Expanded(
 //               child: Column(
@@ -143,10 +143,10 @@
 //                         Expanded(
 //                           child: Stack(
 //                             children: [
-                             
+
 //                               // CHANGED: MAIN BALANCE CARD WITH MORE HEIGHT AND CUSTOM BORDER RADIUS + DARKER SHADOW
 //                               Container(
-//                                 height: 240, 
+//                                 height: 240,
 //                                 decoration: BoxDecoration(
 //                                   color: Colors.black,
 //                                   // SPECIFIED: ONLY TOP-LEFT AND BOTTOM-LEFT ROUNDED
@@ -197,7 +197,7 @@
 //                                             ),
 //                                           ),
 //                                           SizedBox(height: 10),
-                                          
+
 //                                           Row(
 //                                             crossAxisAlignment: CrossAxisAlignment.baseline,
 //                                             textBaseline: TextBaseline.alphabetic,
@@ -206,7 +206,7 @@
 //                                                 '1000',
 //                                                 style: GoogleFonts.barlow(
 //                                                   color: Colors.white,
-//                                                   fontSize: 32, 
+//                                                   fontSize: 32,
 //                                                   // fontWeight: FontWeight.bold,
 //                                                 ),
 //                                               ),
@@ -216,7 +216,7 @@
 //                                                 style: GoogleFonts.barlow(
 //                                                   color: Colors.white,
 //                                                   fontSize: 32, // SMALLER SIZE FOR CURRENCY
-                                                  
+
 //                                                 ),
 //                                               ),
 //                                             ],
@@ -232,7 +232,7 @@
 //                                                 ),
 //                                               ),
 //                                               SizedBox(width: 10),
-                                             
+
 //                                               // ignore: sized_box_for_whitespace
 //                                               Container(
 //                                                 width: 20,
@@ -240,7 +240,7 @@
 //                                                 child: SvgPicture.asset(
 //                                                   'assets/icon_white.svg',
 //                                                   colorFilter: ColorFilter.mode(
-//                                                     Colors.white, 
+//                                                     Colors.white,
 //                                                     BlendMode.srcIn
 //                                                   ),
 //                                                   placeholderBuilder: (context) => Icon(
@@ -264,7 +264,7 @@
 //                       ],
 //                     ),
 //                   ),
-                  
+
 //                   // Recent Transactions - touches both sides and extends to bottom nav
 //                   Expanded(
 //                     child: Container(
@@ -290,7 +290,7 @@
 //                             ),
 //                           ),
 //                           SizedBox(height: 20),
-                          
+
 //                           // Transaction items
 //                           _buildTransactionItem('- 100,000 ugx', 'savings wallet'),
 //                           _buildTransactionItem('+ 500,000 ugx', 'savings wallet'),
@@ -302,7 +302,7 @@
 //                 ],
 //               ),
 //             ),
-            
+
 //             // Bottom navigation
 //             Container(
 //               height: 80,
@@ -323,14 +323,14 @@
 //               child: Row(
 //                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 //                 children: [
-                  
+
 //                   Row(
 //                     mainAxisSize: MainAxisSize.min,
 //                     children: [
 //                       HugeIcon(
 //                         icon: HugeIcons.strokeRoundedHome01,
 //                         color: Colors.white,
-//                         size: 28.0, 
+//                         size: 28.0,
 //                       ),
 //                       SizedBox(width: 8),
 //                       Text(
@@ -339,7 +339,7 @@
 //                       ),
 //                     ],
 //                   ),
-                  
+
 //                   // Raised profile button
 //                   Transform.translate(
 //                     offset: Offset(0, -40), // Raised higher
@@ -364,7 +364,7 @@
 //                       ),
 //                     ),
 //                   ),
-                  
+
 //                   // Wallets button with icon and label in same line
 //                   Row(
 //                     mainAxisSize: MainAxisSize.min,
@@ -389,7 +389,7 @@
 //       ),
 //     );
 //   }
-  
+
 //   Widget _buildTransactionItem(String amount, String type) {
 //     bool isPositive = amount.startsWith('+');
 //     return Padding(
@@ -418,25 +418,16 @@
 //   }
 // }
 
-
-
-
-
-
-
-
 // import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
-// import '../widgets/bottom_nav_widget.dart'; 
+// import '../widgets/bottom_nav_widget.dart';
 
-// // import '../widgets/deposit_widget.dart'; 
-// // import '../widgets/withdraw_widget.dart'; 
+// // import '../widgets/deposit_widget.dart';
+// // import '../widgets/withdraw_widget.dart';
 
 // // import '../screens/wallet_screen.dart';
-
-
 
 // class Home extends StatelessWidget {
 //   const Home({super.key});
@@ -455,7 +446,7 @@
 //               color: Colors.white,
 //               child: Row(
 //                 children: [
-                 
+
 //                   Container(
 //                     decoration: BoxDecoration(
 //                       shape: BoxShape.circle,
@@ -493,7 +484,7 @@
 //                 ],
 //               ),
 //             ),
-            
+
 //             // Main content
 //             Expanded(
 //               child: Column(
@@ -578,10 +569,10 @@
 //                         Expanded(
 //                           child: Stack(
 //                             children: [
-                             
+
 //                               // CHANGED: MAIN BALANCE CARD WITH MORE HEIGHT AND CUSTOM BORDER RADIUS + DARKER SHADOW
 //                               Container(
-//                                 height: 240, 
+//                                 height: 240,
 //                                 decoration: BoxDecoration(
 //                                   color: Colors.black,
 //                                   // SPECIFIED: ONLY TOP-LEFT AND BOTTOM-LEFT ROUNDED
@@ -632,7 +623,7 @@
 //                                             ),
 //                                           ),
 //                                           SizedBox(height: 10),
-                                          
+
 //                                           Row(
 //                                             crossAxisAlignment: CrossAxisAlignment.baseline,
 //                                             textBaseline: TextBaseline.alphabetic,
@@ -641,7 +632,7 @@
 //                                                 '1000',
 //                                                 style: GoogleFonts.barlow(
 //                                                   color: Colors.white,
-//                                                   fontSize: 32, 
+//                                                   fontSize: 32,
 //                                                   // fontWeight: FontWeight.bold,
 //                                                 ),
 //                                               ),
@@ -651,7 +642,7 @@
 //                                                 style: GoogleFonts.barlow(
 //                                                   color: Colors.white,
 //                                                   fontSize: 32, // SMALLER SIZE FOR CURRENCY
-                                                  
+
 //                                                 ),
 //                                               ),
 //                                             ],
@@ -667,7 +658,7 @@
 //                                                 ),
 //                                               ),
 //                                               SizedBox(width: 10),
-                                             
+
 //                                               // ignore: sized_box_for_whitespace
 //                                               Container(
 //                                                 width: 20,
@@ -675,7 +666,7 @@
 //                                                 child: SvgPicture.asset(
 //                                                   'assets/icon_white.svg',
 //                                                   colorFilter: ColorFilter.mode(
-//                                                     Colors.white, 
+//                                                     Colors.white,
 //                                                     BlendMode.srcIn
 //                                                   ),
 //                                                   placeholderBuilder: (context) => Icon(
@@ -699,7 +690,7 @@
 //                       ],
 //                     ),
 //                   ),
-                  
+
 //                   // Recent Transactions - touches both sides and extends to bottom nav
 //                   Expanded(
 //                     child: Container(
@@ -725,7 +716,7 @@
 //                             ),
 //                           ),
 //                           SizedBox(height: 20),
-                          
+
 //                           // Transaction items
 //                           _buildTransactionItem('- 100,000 ugx', 'savings wallet'),
 //                           _buildTransactionItem('+ 500,000 ugx', 'savings wallet'),
@@ -737,7 +728,7 @@
 //                 ],
 //               ),
 //             ),
-            
+
 //             // Bottom navigation - Now using the Nav widget
 //             Nav(),
 //           ],
@@ -745,7 +736,7 @@
 //       ),
 //     );
 //   }
-  
+
 //   Widget _buildTransactionItem(String amount, String type) {
 //     bool isPositive = amount.startsWith('+');
 //     return Padding(
@@ -774,19 +765,15 @@
 //   }
 // }
 
-
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../widgets/bottom_nav_widget.dart'; 
-import '../widgets/deposit_widget.dart'; 
-import '../widgets/withdraw_widget.dart'; 
+import '../widgets/bottom_nav_widget.dart';
+import '../widgets/deposit_widget.dart';
+import '../widgets/withdraw_widget.dart';
 import '../screens/wallet_screen.dart';
+// import '../screens/signup_screen.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -801,18 +788,19 @@ class Home extends StatelessWidget {
             // Header with profile
             Container(
               // CHANGED: SHIFTED HEADER PADDING MORE TO THE RIGHT
-              padding: EdgeInsets.only(left: 40, right: 20, top: 20, bottom: 20),
+              padding: EdgeInsets.only(
+                left: 40,
+                right: 20,
+                top: 20,
+                bottom: 20,
+              ),
               color: Colors.white,
               child: Row(
                 children: [
-                 
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Colors.grey[300]!,
-                        width: 2,
-                      ),
+                      border: Border.all(color: Colors.grey[300]!, width: 2),
                     ),
                     child: CircleAvatar(
                       radius: 25,
@@ -826,24 +814,18 @@ class Home extends StatelessWidget {
                     children: [
                       Text(
                         'Hello,',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.black,
-                        ),
+                        style: TextStyle(fontSize: 16, color: Colors.black),
                       ),
                       Text(
                         'HANIFA MEY',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),
+                        style: TextStyle(fontSize: 18, color: Colors.black),
                       ),
                     ],
                   ),
                 ],
               ),
             ),
-            
+
             // Main content
             Expanded(
               child: Column(
@@ -865,7 +847,10 @@ class Home extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => WalletScreen(initialWidget: Deposit()),
+                                      builder:
+                                          (context) => WalletScreen(
+                                            initialWidget: Deposit(),
+                                          ),
                                     ),
                                   );
                                 },
@@ -906,7 +891,10 @@ class Home extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => WalletScreen(initialWidget: Withdraw()),
+                                      builder:
+                                          (context) => WalletScreen(
+                                            initialWidget: Withdraw(),
+                                          ),
                                     ),
                                   );
                                 },
@@ -943,15 +931,14 @@ class Home extends StatelessWidget {
                             ],
                           ),
                         ),
-                         SizedBox(width: 50),
+                        SizedBox(width: 50),
                         // Balance card - extends to right edge
                         Expanded(
                           child: Stack(
                             children: [
-                             
                               // CHANGED: MAIN BALANCE CARD WITH MORE HEIGHT AND CUSTOM BORDER RADIUS + DARKER SHADOW
                               Container(
-                                height: 240, 
+                                height: 240,
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   // SPECIFIED: ONLY TOP-LEFT AND BOTTOM-LEFT ROUNDED
@@ -990,7 +977,8 @@ class Home extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsets.all(25),
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             'BALANCE',
@@ -1002,16 +990,18 @@ class Home extends StatelessWidget {
                                             ),
                                           ),
                                           SizedBox(height: 10),
-                                          
+
                                           Row(
-                                            crossAxisAlignment: CrossAxisAlignment.baseline,
-                                            textBaseline: TextBaseline.alphabetic,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.baseline,
+                                            textBaseline:
+                                                TextBaseline.alphabetic,
                                             children: [
                                               Text(
                                                 '1000',
                                                 style: GoogleFonts.barlow(
                                                   color: Colors.white,
-                                                  fontSize: 32, 
+                                                  fontSize: 32,
                                                   // fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -1020,8 +1010,8 @@ class Home extends StatelessWidget {
                                                 'USDT',
                                                 style: GoogleFonts.barlow(
                                                   color: Colors.white,
-                                                  fontSize: 32, // SMALLER SIZE FOR CURRENCY
-                                                  
+                                                  fontSize:
+                                                      32, // SMALLER SIZE FOR CURRENCY
                                                 ),
                                               ),
                                             ],
@@ -1037,7 +1027,7 @@ class Home extends StatelessWidget {
                                                 ),
                                               ),
                                               SizedBox(width: 10),
-                                             
+
                                               // ignore: sized_box_for_whitespace
                                               Container(
                                                 width: 20,
@@ -1045,14 +1035,16 @@ class Home extends StatelessWidget {
                                                 child: SvgPicture.asset(
                                                   'assets/icon_white.svg',
                                                   colorFilter: ColorFilter.mode(
-                                                    Colors.white, 
-                                                    BlendMode.srcIn
+                                                    Colors.white,
+                                                    BlendMode.srcIn,
                                                   ),
-                                                  placeholderBuilder: (context) => Icon(
-                                                    Icons.account_balance_wallet,
-                                                    color: Colors.white,
-                                                    size: 20,
-                                                  ),
+                                                  placeholderBuilder:
+                                                      (context) => Icon(
+                                                        Icons
+                                                            .account_balance_wallet,
+                                                        color: Colors.white,
+                                                        size: 20,
+                                                      ),
                                                 ),
                                               ),
                                             ],
@@ -1069,13 +1061,18 @@ class Home extends StatelessWidget {
                       ],
                     ),
                   ),
-                  
+
                   // Recent Transactions - touches both sides and extends to bottom nav
                   Expanded(
                     child: Container(
                       width: double.infinity,
                       // CHANGED: ADDED PADDING FOR TOP, LEFT, RIGHT
-                      padding: EdgeInsets.only(left: 30, right: 30, top: 30, bottom: 20),
+                      padding: EdgeInsets.only(
+                        left: 30,
+                        right: 30,
+                        top: 30,
+                        bottom: 20,
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -1095,11 +1092,20 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           SizedBox(height: 20),
-                          
+
                           // Transaction items
-                          _buildTransactionItem('- 100,000 ugx', 'savings wallet'),
-                          _buildTransactionItem('+ 500,000 ugx', 'savings wallet'),
-                          _buildTransactionItem('+ 700,000 ugx', 'savings wallet'),
+                          _buildTransactionItem(
+                            '- 100,000 ugx',
+                            'savings wallet',
+                          ),
+                          _buildTransactionItem(
+                            '+ 500,000 ugx',
+                            'savings wallet',
+                          ),
+                          _buildTransactionItem(
+                            '+ 700,000 ugx',
+                            'savings wallet',
+                          ),
                         ],
                       ),
                     ),
@@ -1107,7 +1113,7 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            
+
             // Bottom navigation - Now using the Nav widget
             Nav(),
           ],
@@ -1115,7 +1121,7 @@ class Home extends StatelessWidget {
       ),
     );
   }
-  
+
   Widget _buildTransactionItem(String amount, String type) {
     bool isPositive = amount.startsWith('+');
     return Padding(
@@ -1131,13 +1137,7 @@ class Home extends StatelessWidget {
               color: isPositive ? Colors.green : Colors.red,
             ),
           ),
-          Text(
-            type,
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.grey[600],
-            ),
-          ),
+          Text(type, style: TextStyle(fontSize: 14, color: Colors.grey[600])),
         ],
       ),
     );
