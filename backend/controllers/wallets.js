@@ -1,4 +1,4 @@
-import bitnobApi from "../utitls/bitnobConfig.js";
+import bitnobApi from "../utils/bitnobConfig.js";
 import wallets from "../models/wallets.js";
 import user from "../models/user.js";
 
@@ -12,7 +12,7 @@ export const create_wallet = async (req, res, next) => {
 
     // Validate withdrawal date is in the future
     const withdrawalDate = new Date(withdrawal_date);
-    if (withdrawalDate <= new Date()) {
+    if (withdrawalDate && withdrawalDate <= new Date()) {
       return res.status(400).json({ error: 'Withdrawal date must be in the future' });
     }
 
@@ -46,6 +46,7 @@ export const create_wallet = async (req, res, next) => {
       user_id:customer_id,
       name,
       bitnob_wallet_id: bitnoAddressDetails.id,
+      bitnob_address: bitnoAddressDetails.address,
       withdrawal_date: withdrawalDate,
     });
 
@@ -55,6 +56,7 @@ export const create_wallet = async (req, res, next) => {
         id: wallet.id,
         name: wallet.name,
         withdrawal_date: wallet.withdrawal_date,
+        total_amount: wallet.total_amount,
         balance: wallet.balance,
         status: wallet.status,
         address_details:bitnoAddressDetails

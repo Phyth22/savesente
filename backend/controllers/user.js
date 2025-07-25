@@ -1,5 +1,5 @@
 import user from "../models/user.js";
-import bitnobApi from "../utitls/bitnobConfig.js";
+import bitnobApi from "../utils/bitnobConfig.js";
 
 
 
@@ -36,7 +36,6 @@ export const create_customer = async (req, res, next) => {
             countryCode: countryCode,
         });
 
-        console.log('Bitnob response:', response.data);
         if (response?.data?.status !== true) {
         return res.status(response.status).json({ error: 'Failed to create customer in Bitnob' });
         }
@@ -44,7 +43,7 @@ export const create_customer = async (req, res, next) => {
         // Update user with Bitnob customer ID
         await newUser.update({ bitnob_customer_id: bitnobCustomerId });
     }catch (error) {
-      console.error('Error creating user in Bitnob:', error);
+      // console.error('Error creating user in Bitnob:', error);
       return res.status(500).json({ error: 'Failed to create customer in Bitnob' });
     } 
 

@@ -10,4 +10,5 @@ const bitnobApi = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
 export default bitnobApi;

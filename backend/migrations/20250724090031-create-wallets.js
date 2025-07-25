@@ -24,9 +24,17 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true,
       },
+      bitnob_address: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
       withdrawal_date: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: true
+      },
+      total_amount: {
+        type: Sequelize.DECIMAL(18,8),
+        defaultValue: 0.0,
       },
       balance: {
         type: Sequelize.DECIMAL(18,8),

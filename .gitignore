@@ -1,5 +1,6 @@
 #  BACK END GIT IGNORE 
-
+backend/.env
+/.env
 
 
 # Miscellaneous
@@ -124,6 +125,8 @@ app.*.symbols
 
 node_modules/
 
+backend/.env
+
 
 
 
@@ -187,3 +190,8 @@ coverage/
 # Firebase
 google-services.json
 GoogleService-Info.plist
+
+**/.env
+
+
+
