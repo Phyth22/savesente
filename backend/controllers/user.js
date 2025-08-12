@@ -43,7 +43,7 @@ export const create_customer = async (req, res, next) => {
         // Update user with Bitnob customer ID
         await newUser.update({ bitnob_customer_id: bitnobCustomerId });
     }catch (error) {
-      // console.error('Error creating user in Bitnob:', error);
+      console.error('Error creating user in Bitnob:', error);
       return res.status(500).json({ error: 'Failed to create customer in Bitnob' });
     } 
 
