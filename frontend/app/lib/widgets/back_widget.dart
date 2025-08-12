@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class BackWidget extends StatelessWidget {
   final VoidCallback? onPressed;
-  
+
   const BackWidget({
     super.key,
     this.onPressed,
@@ -12,19 +13,22 @@ class BackWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-      color: Color(0xFFD0D0D0),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      color: const Color(0xFFD0D0D0),
       child: Row(
         children: [
-          Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black,
-            size: 18,
+          IconButton(
+            onPressed: onPressed ?? () => Navigator.pop(context),
+            icon: const HugeIcon(
+              icon: HugeIcons.strokeRoundedArrowTurnBackward,
+              size: 24.0,
+              color: Colors.black,
+            ),
           ),
-          SizedBox(width: 8),
+          const SizedBox(width: 8),
           GestureDetector(
             onTap: onPressed ?? () => Navigator.pop(context),
-            child: Text(
+            child: const Text(
               'Back to home screen',
               style: TextStyle(
                 fontSize: 16,

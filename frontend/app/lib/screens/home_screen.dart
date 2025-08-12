@@ -765,15 +765,29 @@
 //   }
 // }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> upstream/faeith
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+<<<<<<< HEAD
 import '../widgets/bottom_nav_widget.dart';
 import '../widgets/deposit_widget.dart';
 import '../widgets/withdraw_widget.dart';
 import '../screens/wallet_screen.dart';
 // import '../screens/signup_screen.dart';
+=======
+import '../widgets/bottom_nav_widget.dart'; 
+import '../widgets/deposit_widget.dart'; 
+import '../widgets/withdraw_widget.dart'; 
+import '../widgets/header_widget.dart'; 
+import '../widgets/transactions_widget.dart'; 
+import 'wallet_actions_screen.dart';
+>>>>>>> upstream/faeith
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -785,6 +799,7 @@ class Home extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
+<<<<<<< HEAD
             // Header with profile
             Container(
               // CHANGED: SHIFTED HEADER PADDING MORE TO THE RIGHT
@@ -826,6 +841,11 @@ class Home extends StatelessWidget {
               ),
             ),
 
+=======
+            // Header with profile - Now using HeaderWidget
+            HeaderWidget(),
+            
+>>>>>>> upstream/faeith
             // Main content
             Expanded(
               child: Column(
@@ -880,7 +900,7 @@ class Home extends StatelessWidget {
                                 'Deposit to\nwallet',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontSize: 12,
+                                  fontSize: 14,
                                   color: Colors.black,
                                 ),
                               ),
@@ -924,7 +944,7 @@ class Home extends StatelessWidget {
                                 'Withdraw\nfrom\nwallet',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontSize: 12,
+                                  fontSize: 14,
                                   color: Colors.black,
                                 ),
                               ),
@@ -1010,8 +1030,13 @@ class Home extends StatelessWidget {
                                                 'USDT',
                                                 style: GoogleFonts.barlow(
                                                   color: Colors.white,
+<<<<<<< HEAD
                                                   fontSize:
                                                       32, // SMALLER SIZE FOR CURRENCY
+=======
+                                                  fontSize: 32, 
+                                                  
+>>>>>>> upstream/faeith
                                                 ),
                                               ),
                                             ],
@@ -1019,6 +1044,7 @@ class Home extends StatelessWidget {
                                           Spacer(),
                                           Row(
                                             children: [
+<<<<<<< HEAD
                                               Text(
                                                 'Save Sente',
                                                 style: GoogleFonts.barlow(
@@ -1028,13 +1054,19 @@ class Home extends StatelessWidget {
                                               ),
                                               SizedBox(width: 10),
 
+=======
+                                           
+                                              SizedBox(width: 50),
+                                             
+>>>>>>> upstream/faeith
                                               // ignore: sized_box_for_whitespace
                                               Container(
-                                                width: 20,
-                                                height: 20,
+                                                width: 30,
+                                                height: 30,
                                                 child: SvgPicture.asset(
-                                                  'assets/icon_white.svg',
+                                                  'assets/icon_whiter.svg',
                                                   colorFilter: ColorFilter.mode(
+<<<<<<< HEAD
                                                     Colors.white,
                                                     BlendMode.srcIn,
                                                   ),
@@ -1045,6 +1077,20 @@ class Home extends StatelessWidget {
                                                         color: Colors.white,
                                                         size: 20,
                                                       ),
+=======
+                                                    Colors.white, 
+                                                    BlendMode.srcIn
+                                                  ),
+                                                  
+                                                ),
+                                              ),
+ SizedBox(width: 10),
+                                                 Text(
+                                                'Save Sente',
+                                                style: GoogleFonts.inter(
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+>>>>>>> upstream/faeith
                                                 ),
                                               ),
                                             ],
@@ -1061,6 +1107,7 @@ class Home extends StatelessWidget {
                       ],
                     ),
                   ),
+<<<<<<< HEAD
 
                   // Recent Transactions - touches both sides and extends to bottom nav
                   Expanded(
@@ -1110,6 +1157,11 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
+=======
+                  
+                  // Recent Transactions - Now using TransactionsWidget
+                  TransactionsWidget(),
+>>>>>>> upstream/faeith
                 ],
               ),
             ),
@@ -1121,6 +1173,7 @@ class Home extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 
   Widget _buildTransactionItem(String amount, String type) {
     bool isPositive = amount.startsWith('+');
@@ -1143,3 +1196,6 @@ class Home extends StatelessWidget {
     );
   }
 }
+=======
+}
+>>>>>>> upstream/faeith

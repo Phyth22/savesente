@@ -49,6 +49,7 @@ dependencies:
   hugeicons: ^0.0.1
   flutter_svg: ^2.1.0
   path_parsing: ^1.0.1
+  path_drawing: ^1.0.1
 
 
 dev_dependencies:
@@ -79,6 +80,9 @@ flutter:
 
     - assets/profile.jpg
     - assets/icon_white.svg
+    - assets/icon_whitey.svg
+    - assets/icon_whiter.svg
+    
 
 
 

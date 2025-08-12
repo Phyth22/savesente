@@ -661,7 +661,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
-import '../widgets/wallet_widget.dart';
+import '../widgets/create_wallet_widget.dart';
 import '../widgets/back_widget.dart';
 import '../widgets/deposit_widget.dart';
 import '../widgets/withdraw_widget.dart';
